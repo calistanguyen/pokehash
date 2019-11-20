@@ -32,7 +32,7 @@ class PokeHash
 
     private: 
         int tableSize = 1049;//number of pokemon that currently exist * 1.3
-        pokeNode* array[tableSize]; 
+        pokeNode* table[tableSize]; 
         vector<pokeNode*> normal;
         vector<pokeNode*> fire;
         vector<pokeNode*> water;
