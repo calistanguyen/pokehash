@@ -8,8 +8,8 @@ struct pokeNode
 {
     string name; 
     float weight; 
-    string ability1; 
-    string ability2; 
+    string type1; 
+    string type2; 
     string desc; 
     pokeNode *next; 
 
