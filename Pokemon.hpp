@@ -6,6 +6,7 @@ using namespace std;
 #define POKEHASH_HPP
 struct pokeNode
 {
+    int index; // pokemon's index in pokedex
     string name; 
     float weight; 
     string type1; 
