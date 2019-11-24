@@ -16,8 +16,8 @@ struct pokeNode
 
     pokeNode(){}//default constructor
 
-    LLMovieNode(string n, float w, string a1, string a2, string d) : name(n), weight(w), 
-    ability1(a1), ability2(a2), desc(d){} //parametized constructor 
+    pokeNode(string n, float w, string t1, string t2, string d) : name(n), weight(w), 
+    type1(t1), type2(t2), desc(d){} //parametized constructor 
 
 }; 
 
@@ -28,12 +28,13 @@ class PokeHash
         bool insertPokemon(string name); //when true, this will output to user pokemon file
         void printByType(string type); 
         pokeNode *searchPokemon(string name);
-        void readInFiles(); //reads in original pokemon file and user's pokemon file
+        void readInPokemonFile(); //reads in original pokemon file
+        void readInUserFile(); //reads in users file
         unsigned int hashFunction(string key); 
 
     private: 
-        int tableSize = 1049;//number of pokemon that currently exist * 1.3
-        pokeNode* table[tableSize]; 
+        const int tableSize = 1049;//number of pokemon that currently exist * 1.3
+        pokeNode* *table[1049]; 
         vector<pokeNode*> normal;
         vector<pokeNode*> fire;
         vector<pokeNode*> water;
@@ -59,4 +60,3 @@ class PokeHash
 
 };
 #endif
-
