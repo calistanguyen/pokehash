@@ -8,9 +8,9 @@ void displayMenu()
     cout << "+=========Main Menu=========+" << endl;
     cout << " 1. View Pokemon by Type" << endl;
     cout << " 2. Search Pokemon by Name" << endl;
-    cout << " 3. Add Pokemon" << endl;
+    cout << " 3. Create Your Own Pokemon" << endl;
     cout << " 4. Quit " << endl;
-    cout << "+-----------------------+" << endl;
+    cout << "+--------------------------+" << endl;
     cout << "#> ";
 
 }
@@ -18,8 +18,8 @@ void displayMenu()
 int main(int argc, char* argv[])
 {
     cout << endl; 
-    string s = "   Welcome to   ";
-    string lol = " P O K E H A S H ";
+    string s = "          Welcome to   ";
+    string l = "        P O K E H A S H";
     for(int i = 0; i < s.size(); i++)
     {
         cout << s[i] << flush;
@@ -27,10 +27,10 @@ int main(int argc, char* argv[])
 
     }
     cout << endl;
-    for(int j = 0; j < lol.size(); j++)
+    for(int j = 0; j < l.size(); j++)
     {
-        cout << lol[j] << flush;
-        usleep(100000);
+        cout << l[j] << flush;
+        usleep(50000);
     }
     // cout << "   Welcome to   " << endl;
     // cout << " P O K E H A S H " << endl;
@@ -109,7 +109,7 @@ int main(int argc, char* argv[])
                 cout << "⣿⣿⣿⣿⣿⣿⣿⣿⡀⠉⠀⠀⠀⠀⠀⢄⠀⢀⠀⠀⠀⠀⠉⠉⠁⠀⠀⣿⣿⣿" << endl;
                 usleep(100000);
                 cout << "⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿" << endl;
-                
+
                 break;
             }
 
