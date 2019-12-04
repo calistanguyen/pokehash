@@ -804,7 +804,10 @@ bool PokeHash::insertPokemon(string name, string file)
         cout << "Pokedex number: " << i << endl;
         cout << "Weight: " << w << endl;
         cout << "Type: " << t1 << endl;
-        cout << "Second type: " << t2 << endl;
+        if(t2 != "NULL")
+        {
+            cout << "Second type: " << t2 << endl;
+        }
         cout << "Description: \n" << d << endl << endl;
 
         cout << "Are you sure you want to create this Pokemon? (Y or N): ";
